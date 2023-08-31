@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Programação para a Web</title>
-  <link rel="stylesheet" href="css/gpt.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <nav id="nav-bar">
@@ -13,11 +13,34 @@
   <a href="#course-topics">Tópicos</a>
   <a href="#course-references">Referências</a>
   <a href="#course-evaluation">Avaliação</a>
+  <a href="university.html">Sobre a Faculdade</a>
 </nav>
 
-<main id="container">
+<div id="container">
 
-  <div id="main-content">
+  <aside id="teacher-info">
+    <figure>
+      <img src="img/guilherme-palermo-coelho.jpg" alt="Foto do professor Guilherme Palermo Coelho"/>
+      <figcaption>
+        <strong>Guilherme Palermo Coelho</strong>
+      </figcaption>
+    </figure>
+
+    <p> Professor Associado - MS5.1</p>
+    <p>Possui doutorado em Engenharia Elétrica (2011) pela Universidade Estadual de Campinas (Unicamp). Atualmente é
+      Professor Doutor MS3.1 na Faculdade de Tecnologia (FT) / Universidade Estadual de Campinas (Unicamp), onde
+      realiza atividades de ensino e desenvolve pesquisas nas linhas de metaheurísticas para otimização, mineração de
+      dados e aprendizado de máquina. Tem experiência na área de Inteligência Computacional, atuando principalmente nos
+      seguintes temas: computação bio-inspirada, otimização (mono e multi-objetivo) e redes neurais artificiais,
+      ensembles e agrupamento de dados.</p>
+    <p>Currículo Lattes: <a href="http://lattes.cnpq.br/0597865875425201" target="_blank">http://lattes.cnpq.br/0597865875425201</a>
+    </p>
+    <p>Página Pessoal: <a href="http://www.ft.unicamp.br/~guilherme"
+                          target="_blank">http://www.ft.unicamp.br/~guilherme</a></p>
+
+  </aside>
+
+  <main id="main-content">
     <h1 id="subject-name-title">G_SI401A_2023S2 - Programação para a Web</h1>
 
     <section id="course-syllabus-container">
@@ -48,16 +71,15 @@
       <ul>
         <li>Instruções gerais sobre a disciplina.</li>
         <li>
-          Visão geral sobre o funcionamento da web, com foco nas interações navegador-servidor, e
-          contextualização da Programação para Web.
+          Visão geral sobre o funcionamento da web, com foco nas interações navegador-servidor, e contextualização da
+          Programação para Web.
         </li>
         <li>
-          Hypertext Markup Language (HTML) e estrutura de documentos HTML (tags, declarações DOCTYPE,
-          elementos HTML e atributos de elementos HTML).
+          Hypertext Markup Language (HTML) e estrutura de documentos HTML (tags, declarações DOCTYPE, elementos HTML e
+          atributos de elementos HTML).
         </li>
         <li>
-          Exemplos de elementos HTML (parágrafos, títulos, imagens, hyperlinks, tabelas, listas e
-          iFrames).
+          Exemplos de elementos HTML (parágrafos, títulos, imagens, hyperlinks, tabelas, listas e iFrames).
         </li>
         <li>O elemento HEAD de HTML.</li>
         <li>Layouts via HTML.</li>
@@ -75,8 +97,7 @@
         <li>Acesso a Bancos de Dados em PHP via PHP Data Objects (PDO).</li>
         <li>Cookies e sessões em PHP.</li>
         <li>
-          Comunicação assíncrona de dados entre back-end (aplicações em PHP) e front-end (scripts em
-          JavaScript).
+          Comunicação assíncrona de dados entre back-end (aplicações em PHP) e front-end (scripts em JavaScript).
         </li>
       </ul>
     </section>
@@ -87,21 +108,21 @@
       <ul class="references-content">
         <li>
           Schultz, D. & Cook, C. “Beginning HTML with CSS and XHTML – Modern Guide and Reference”. Apress, 2007. DOI:
-          <a href="http://dx.doi.org/10.1007/978-1-4302-0350-6">
+          <a href="http://dx.doi.org/10.1007/978-1-4302-0350-6" target="_blank">
             http://dx.doi.org/10.1007/978-1-4302-0350-6
           </a>
           <i>(acesso via VPN/Unicamp)</i>
         </li>
         <li>
           McPeak, J. & Wilton, P. “Beginning JavaScript®”. 5th. Ed., John Wiley & Son, 2015. Disponível em:
-          <a href="http://onlinelibrary.wiley.com/book/10.1002/9781119209423">
+          <a href="http://onlinelibrary.wiley.com/book/10.1002/9781119209423" target="_blank">
             http://onlinelibrary.wiley.com/book/10.1002/9781119209423
           </a>
           <i>(acesso via VPN/Unicamp)</i>
         </li>
         <li>
           Saraiva, M. O. “Desenvolvimento de sistemas com PHP”. SAGAH, 2018. Disponível em:
-          <a href="https://integrada.minhabiblioteca.com.br/books/9788595023222">
+          <a href="https://integrada.minhabiblioteca.com.br/books/9788595023222" target="_blank">
             https://integrada.minhabiblioteca.com.br/books/9788595023222
           </a>
           <i>(é necessário cadastro via Unicamp)</i>
@@ -110,9 +131,12 @@
 
       <h3>Bibliografia complementar</h3>
       <ul class="references-content">
-        <li>W3Schools Online Web Tutorials: <a href="https://www.w3schools.com/">https://www.w3schools.com/</a></li>
-        <li>Mozilla Developer Network: <a href="http://developer.mozilla.org/">http://developer.mozilla.org/</a></li>
-        <li>Silva, M. S. “Construindo sites com CSS e (X)HTML Sites controlados por folhas de estilo em cascata”.
+        <li>W3Schools Online Web Tutorials: <a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a>
+        </li>
+        <li>Mozilla Developer Network: <a href="http://developer.mozilla.org/" target="_blank">http://developer.mozilla.org/</a>
+        </li>
+        <li>Silva, M. S. “Construindo sites com CSS e (X)HTML Sites controlados por folhas de estilo em
+          cascata”.
           Novatec, 2008.
         </li>
         <li>Silva, M. S. “JavaScript: Guia do Programador”. Novatec, 2010.</li>
@@ -124,55 +148,15 @@
     <section id="course-evaluation-container">
       <h2 id="course-evaluation">Avaliação</h2>
       <p id="course-evaluation-content">
-        A disciplina contará com um Projeto Final (a ser
-        desenvolvido em grupo), dividido em três entregas parciais
-        ao longo do semestre, e uma série de exercícios práticos de
-        fixação (a serem desenvolvidos individualmente). Tais
-        atividades serão utilizadas para avaliar a aprendizagem.
-        No caso do Projeto Final, as notas individuais de cada aluno
-        serão atribuídas conforme sua contribuição em cada etapa.
+        A disciplina contará com um Projeto Final (a ser desenvolvido em grupo), dividido em três entregas parciais ao
+        longo do semestre, e uma série de exercícios práticos de fixação (a serem desenvolvidos individualmente). Tais
+        atividades serão utilizadas para avaliar a aprendizagem. No caso do Projeto Final, as notas individuais de cada
+        aluno serão atribuídas conforme sua contribuição em cada etapa.
       </p>
     </section>
-  </div>
-</main>
+  </main>
 
-<aside id="left-container" class="aside-containers">
-  <figure>
-    <img src="img/guilherme-palermo-coelho.jpg" alt="Foto do professor Guilherme Palermo Coelho"/>
-    <figcaption>
-      Guilherme Palermo Coelho
-    </figcaption>
-  </figure>
-
-  <p>Professor Associado - MS5.1</p>
-  <p>Possui doutorado em Engenharia Elétrica (2011) pela Universidade Estadual de Campinas (Unicamp). Atualmente é
-    Professor Doutor MS3.1 na Faculdade de Tecnologia (FT) / Universidade Estadual de Campinas (Unicamp), onde realiza
-    atividades de ensino e desenvolve pesquisas nas linhas de metaheurísticas para otimização, mineração de dados e
-    aprendizado de máquina. Tem experiência na área de Inteligência Computacional, atuando principalmente nos seguintes
-    temas: computação bio-inspirada, otimização (mono e multi-objetivo) e redes neurais artificiais, ensembles e
-    agrupamento de dados.</p>
-  <p>Currículo Lattes: <a href="http://lattes.cnpq.br/0597865875425201">http://lattes.cnpq.br/0597865875425201</a></p>
-  <p>Página Pessoal: <a href="http://www.ft.unicamp.br/~guilherme">http://www.ft.unicamp.br/~guilherme</a></p>
-
-</aside>
-
-<aside id="right-container" class="aside-containers">
-  <figure>
-    <img src="img/ft.jpg" alt="Faculdade de Tecnologia Unicamp"/>
-    <figcaption>
-      Faculdade de Tecnologia Unicamp - Limeira
-    </figcaption>
-  </figure>
-  <h3>Cursos Oferecidos:</h3>
-  <ul>
-    <li>ENGENHARIA AMBIENTAL</li>
-    <li>ENGENHARIA DE TELECOMUNICAÇÕES</li>
-    <li>ENGENHARIA DE TRANSPORTES</li>
-    <li>SISTEMAS DE INFORMAÇÃO</li>
-    <li>TECNOLOGIA EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</li>
-    <li>TECNOLOGIA EM SANEAMENTO AMBIENTAL</li>
-  </ul>
-</aside>
+</div>
 
 <footer id="footer">
   Bruno Ricardo Corrêa - 2023 - Todos os direitos reservados

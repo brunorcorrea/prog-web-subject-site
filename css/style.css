@@ -1,67 +1,120 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-main {
-    padding-bottom: 30px
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 #nav-bar {
-    background-color: #000000;
-    color: #ffffff;
-
-    height: 60px;
-    width: 100%;
-
-    padding: 10px 20px;
-
-    top: 0;
-    left: 0;
-    z-index: 100;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  padding: 20px 0;
 }
 
-#nav-bar > div > a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-
-
-    display: inline-block;
-
-    font-size: 20px;
-    transition: font-size 0.3s ease;
+#nav-bar > a {
+  color: #fff;
+  font: 20px sans-serif;
 }
 
-#nav-bar > div > a:hover {
-    color: #fdfdfd;
-    text-decoration: none;
-
-    font-size: 22px;
+#nav-bar > a:hover {
+  color: #bbb;
 }
 
-#footer {
-    background-color: #000000;
-    color: #ffffff;
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 
-    font: 15px sans-serif;
+  width: 100%;
 
-    bottom: 0;
-    position: fixed;
+  margin: 20px 0 20px 0;
+}
 
-    height: 30px;
-    width: 100%;
+#teacher-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 15%;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#teacher-info figure {
+  text-align: center;
+}
+
+#teacher-info img {
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  max-height: 200px;
+
+  border: 2px solid #ddd;
+  border-radius: 50%;
+}
+
+#main-content {
+  width: 75%;
+
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  padding: 10px;
+
+  border-radius: 5px;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+#subject-name-title {
+  text-align: center;
 }
 
 .section-content {
+  list-style: disc;
+  margin-left: 20px;
+}
 
+ul > li {
+  margin-bottom: 5px;
+}
+
+.references-content {
+  list-style: none;
+  margin-left: 0;
+}
+
+a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  font-size: 1.05em;
+
+  color: #777;
+
+  transition: font-size 0.3s;
+}
+
+a:focus {
+  color: #555;
+}
+
+#footer {
+  background-color: #333;
+  color: #fff;
+
+  text-align: center;
+
+  padding: 10px;
 }
